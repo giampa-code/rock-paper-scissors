@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:  monospace;
+    font-size: 62.5%; 
+}
+
+/*Container*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#a0c6ff,#ffaa2c);
+    font-family: monospace;
+    font-size: 1.6rem;
+    padding: 30px 0;
+}
+
+/* Titles */
+
+h1{
+    font-size: 5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight:500;
+    padding: 2rem;
+}
+
+/*Restart*/
+
+.restart-container{
+    padding: 2rem;
+
+}
+
+.restart-button{
+    color: #fafafa;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.restart-button:hover{
+    cursor: pointer;
+    background-color: #fafafa;
+    color: #222;
+}
+
+
+/*Score board*/
+.score-board{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem;
+    margin-top: 2rem;
+    gap: 4px;
+
+}
+
+
+
+.cell{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff28;
+    border-radius: 5px;
+}
+
+/*Result*/
+.result-container{
+    height: 10rem;
+}
+
+.result{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*Choices*/
+
+.choices-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.choice{
+    padding: 2rem 1rem;
+    margin: 1rem;
+    background-color: #ffffff28;
+    color: #222;
+    text-align: center;
+    width: 15rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.choice:hover{
+    background-color: #22222228;
+    color: white;
+}
+
+
+/* ------------------------------Media Queries */
+
+@media screen and (max-width: 480px){
+    *{font-size: 55%;}
+}
